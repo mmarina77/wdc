@@ -13,145 +13,184 @@
       id: "A76Action",
       dataType: tableau.dataTypeEnum.string
     },{
-      id: "vendorname",
-      alias: "vendorname",
+      id: "account_title",
+      alias: "Account Title",
+      dataType: tableau.dataTypeEnum.string
+    },{
+      id: "Vendorname",
       dataType: tableau.dataTypeEnum.string
     }, {
-      id: "dollarsobligated",
-      alias: "dollarsobligated",
+      id: "Dollarsobligated",
       dataType: tableau.dataTypeEnum.float
     }, {
-      id: "baseandexercisedoptionsvalue",
-      alias: "baseandexercisedoptionsvalue",
+      id: "Baseandexercisedoptionsvalue",
       dataType: tableau.dataTypeEnum.float
     }, {
-      id: "baseandalloptionsvalue",
-      alias: "baseandalloptionsvalue",
+      id: "Baseandalloptionsvalue",
       dataType: tableau.dataTypeEnum.float
     }, {
       id: "maj_agency_cat",
-      alias: "maj_agency_cat",
+      alias: "Maj Agency Cat",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "mod_agency",
-      alias: "mod_agency",
+      alias: "Mod Agency",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "maj_fund_agency_cat",
+      alias: "Maj Fund Agency Cat",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "contractingofficeagencyid",
+      alias: "Contractingofficeagencyid",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "contractingofficeid",
+      alias: "Contractingofficeid",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "fundingrequestingagencyid",
+      alias: "Fundingrequestingagencyid",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "fundingrequestingofficeid",
+      alias: "Fundingrequestingofficeid",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "fundedbyforeignentity",
+      alias: "Fundedbyforeignentity",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "signeddate",
+      alias "Signeddate",
       dataType: tableau.dataTypeEnum.date
     }, {
       id: "effectivedate",
+      alias: "Effectivedate",
       dataType: tableau.dataTypeEnum.date
     }, {
       id: "currentcompletiondate",
+      alias: "Currentcompletiondate",
       dataType: tableau.dataTypeEnum.date
     }, {
       id: "ultimatecompletiondate",
+      alias: "Ultimatecompletiondate",
       dataType: tableau.dataTypeEnum.date
     }, {
       id: "lastdatetoorder",
+      alias: "Lastdatetoorder",
       dataType: tableau.dataTypeEnum.date
     }, {
       id: "contractactiontype",
+      alias: "Contractactiontype",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "reasonformodification",
+      alias: "Reasonformodification",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "typeofcontractpricing",
+      alias: "Typeofcontractpricing",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "priceevaluationpercentdifference",
+      alias: "Priceevaluationpercentdifference",
       dataType: tableau.dataTypeEnum.float
     }, {
       id: "subcontractplan",
+      alias: "Subcontractplan",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "lettercontract",
+      alias: "Lettercontract",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "multiyearcontract",
+      alias: "Multiyearcontract",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "performancebasedservicecontract",
+      alias: "Performancebasedservicecontract",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "majorprogramcode",
+      alias: "Majorprogramcode",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "contingencyhumanitarianpeacekeepingoperation",
+      alias: "Contingencyhumanitarianpeacekeepingoperation",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "contractfinancing",
+      alias: "Contractfinancing",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "costorpricingdata",
+      alias: "Costorpricingdata",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "costaccountingstandardsclause",
+      alias: "Costaccountingstandardsclause",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "descriptionofcontractrequirement",
+      alias: "Descriptionofcontractrequirement",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "purchasecardaspaymentmethod",
+      alias: "Purchasecardaspaymentmethod",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "numberofactions",
+      alias: "Numberofactions",
       dataType: tableau.dataTypeEnum.float
     }, {
       id: "nationalinterestactioncode",
+      alias: "Nationalinterestactioncode",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "progsourceagency",
+      alias: "Progsourceagency",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "progsourceaccount",
+      alias: "Progsourceaccount",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "progsourcesubacct",
+      alias: "Progsourcesubacct",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "vendoralternatename",
+      alias: "Vendoralternatename",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "vendorlegalorganizationname",
+      alias: "Vendorlegalorganizationname",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "streetaddress",
+      alias: "Streetaddress",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "city",
+      alias: "City",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "state",
+      alias: "State",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "zipcode",
+      alias: "Zipcode",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "vendorcountrycode",
+      alias: "Vendorcountrycode",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "vendor_state_code",
+      alias: "Vendor State Code",
       dataType: tableau.dataTypeEnum.string
     },
     // {
@@ -160,69 +199,86 @@
     // },
     {
       id: "congressionaldistrict",
+      alias: "Congressionaldistrict",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "vendorsitecode",
+      alias: "Vendorsitecode",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "vendoralternatesitecode",
+      alias: "Vendoralternatesitecode",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "dunsnumber",
+      alias: "Dunsnumber",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "parentdunsnumber",
+      alias: "Parentdunsnumber",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "registrationdate",
+      alias: "Registrationdate",
       dataType: tableau.dataTypeEnum.date
     },
     {
       id: "renewaldate",
+      alias: "Renewaldate",
       dataType: tableau.dataTypeEnum.date
     },
     {
       id: "mod_parent",
+      alias: "Mod Parent",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "statecode",
+      alias: "Statecode",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "placeofperformancecity",
+      alias: "Placeofperformancecity",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "pop_state_code",
+      alias: "Pop State Code",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "placeofperformancecountrycode",
+      alias: "Placeofperformancecountrycode",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "placeofperformancezipcode",
-      alias: "(20) PoP Zip",
+      alias: "Placeofperformancezipcode",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "pop_cd",
+      alias "Pop Cd",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "psc_cat",
+      alias: "Psc Cat",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "productorservicecode",
+      alias: "Productorservicecode",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "principalnaicscode",
+      alias: "Principalnaicscode",
       dataType: tableau.dataTypeEnum.string
     },
     {
       id: "gfe_gfp",
+      alias: "Gfe Gfp",
       dataType: tableau.dataTypeEnum.string
     },
     {
@@ -237,6 +293,7 @@
     },
     {
       id: "extentcompeted",
+      alias: "Extentcompeted",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "typeofsetaside",
@@ -275,10 +332,11 @@
             // console.log(docs[i]);
             tableData.push({
               "A76Action": docs[i].A76Action,
-              "vendorname": docs[i].vendorName,
-              "dollarsobligated": docs[i].obligatedAmount,
-              "baseandexercisedoptionsvalue": docs[i].baseAndExercisedOptionsValue,
-              "baseandalloptionsvalue": docs[i].baseAndAllOptionsValue,
+              "account_title": docs[i].account_title,
+              "Vendorname": docs[i].vendorName,
+              "Dollarsobligated": docs[i].obligatedAmount,
+              "Baseandexercisedoptionsvalue": docs[i].baseAndExercisedOptionsValue,
+              "Baseandalloptionsvalue": docs[i].baseAndAllOptionsValue,
               "maj_agency_cat": docs[i].maj_agency_cat,
               "mod_agency": docs[i].mod_agency,
               "maj_fund_agency_cat": docs[i].maj_fund_agency_cat,
