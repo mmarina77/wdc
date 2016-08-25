@@ -261,7 +261,7 @@
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "pop_cd",
-      alias "Pop Cd",
+      alias: "Pop Cd",
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "psc_cat",
