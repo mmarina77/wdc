@@ -10,6 +10,10 @@
   // Define the schema
   myConnector.getSchema = function(schemaCallback) {
     var cols = [{
+      id: "piid",
+      alias: "Piid",
+      dataType: tableau.dataTypeEnum.string
+    },{
       id: "unique_transaction_id",
       alias: "Unique Transaction Id",
       dataType: tableau.dataTypeEnum.string
@@ -336,6 +340,7 @@
           for (var i = 0, len = docs.length; i < len; i += 1) {
             // console.log(docs[i]);
             tableData.push({
+              "piid": docs[i].PIID,
               "unique_transaction_id": docs[i].unique_transaction_id,
               "A76Action": docs[i].A76Action,
               "account_title": docs[i].account_title,
