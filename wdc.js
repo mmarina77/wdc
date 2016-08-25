@@ -2,7 +2,8 @@
 
 (function() {
   // hard-coded RL used for ajax call
-  var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=2015&maj_agency_cat=1600&sortby=f&max_records=100";
+  var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=2015&maj_agency_cat=1600&sortby=f";
+  // var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=2015&maj_agency_cat=1600&sortby=f&max_records=100";
 
   // Create the connector object
   var myConnector = tableau.makeConnector();
