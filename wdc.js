@@ -1,4 +1,6 @@
- (function() {
+// Testing deploybot
+
+(function() {
   // hard-coded RL used for ajax call
   var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=2015&maj_agency_cat=1600&sortby=f&max_records=100";
 
@@ -222,6 +224,7 @@
     },
     {
       id: "agencyid",
+      alias: "Agencyid"
       dataType: tableau.dataTypeEnum.string
     },
     {
