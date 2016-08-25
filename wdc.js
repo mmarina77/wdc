@@ -224,7 +224,7 @@
     },
     {
       id: "agencyid",
-      alias: "Agencyid"
+      alias: "Agencyid",
       dataType: tableau.dataTypeEnum.string
     },
     {
