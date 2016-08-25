@@ -25,6 +25,7 @@
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "Dollarsobligated",
+      alias: "Dollars Obligated",
       dataType: tableau.dataTypeEnum.float
     }, {
       id: "Baseandexercisedoptionsvalue",
