@@ -62,7 +62,7 @@
       dataType: tableau.dataTypeEnum.string
     }, {
       id: "signeddate",
-      alias "Signeddate",
+      alias: "Signeddate",
       dataType: tableau.dataTypeEnum.date
     }, {
       id: "effectivedate",
