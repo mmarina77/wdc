@@ -15,18 +15,18 @@
       id: "piid",
       alias: "Piid",
       dataType: tableau.dataTypeEnum.string
-    },{
+    }, {
       id: "unique_transaction_id",
       alias: "Unique Transaction Id",
       dataType: tableau.dataTypeEnum.string
-    },{
+    }, {
       id: "A76Action",
       dataType: tableau.dataTypeEnum.string
-    },{
+    }, {
       id: "account_title",
       alias: "Account Title",
       dataType: tableau.dataTypeEnum.string
-    },{
+    }, {
       id: "Vendorname",
       dataType: tableau.dataTypeEnum.string
     }, {
@@ -203,58 +203,47 @@
       id: "vendor_state_code",
       alias: "Vendor State Code",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "congressionaldistrict",
       alias: "Congressionaldistrict",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "vendorsitecode",
       alias: "Vendorsitecode",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "vendoralternatesitecode",
       alias: "Vendoralternatesitecode",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "dunsnumber",
       alias: "Dunsnumber",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "parentdunsnumber",
       alias: "Parentdunsnumber",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "registrationdate",
       alias: "Registrationdate",
       dataType: tableau.dataTypeEnum.date
-    },
-    {
+    }, {
       id: "renewaldate",
       alias: "Renewaldate",
       dataType: tableau.dataTypeEnum.date
-    },
-    {
+    }, {
       id: "mod_parent",
       alias: "Mod Parent",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "statecode",
       alias: "Statecode",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "placeofperformancecity",
       alias: "Placeofperformancecity",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "pop_state_code",
       alias: "Pop State Code",
       dataType: tableau.dataTypeEnum.string
@@ -282,23 +271,19 @@
       id: "principalnaicscode",
       alias: "Principalnaicscode",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "gfe_gfp",
       alias: "Gfe Gfp",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "agencyid",
       alias: "Agencyid",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "fiscal_year",
       alias: "Fiscal Year",
       dataType: tableau.dataTypeEnum.string
-    },
-    {
+    }, {
       id: "extentcompeted",
       alias: "Extentcompeted",
       dataType: tableau.dataTypeEnum.string
@@ -321,7 +306,7 @@
   // Download the data
   myConnector.getData = function(table, doneCallback) {
     var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=" + fiscalYear + "&maj_agency_cat="+ majAgencyCat + "&max_records=" + maxRecords + "&sortby=f";
-    console.log(url);
+
     $.ajax({
     	url: "xmlproxy.php?url=" + escape(url),
       error: function(jqXHR, textStatus, errorThrown) {
@@ -389,7 +374,6 @@
               "zipcode": docs[i].ZIPCode,
               "vendorcountrycode": docs[i].vendorCountryCode,
               "vendor_state_code": docs[i].vendorStateCode,
-              // "vendor_cd": docs[i].
               "congressionaldistrict": docs[i].congressionalDistrict,
               "vendorsitecode": docs[i].vendorSiteCode,
               "vendoralternatesitecode": docs[i].vendorAlternateSiteCode,
@@ -431,6 +415,7 @@
   // Create event listeners for when the user submits the form
   $(document).ready(function() {
       $("#submitButton").click(function() {
+          // Grab values from pulldowns for API url
           fiscalYear = $('#FiscalYearSelected').val() || fiscalYear;
           majAgencyCat = $('#Agency').val() || majAgencyCat;
           maxRecords = $('#MaxRecords').val() || MaxRecords;
