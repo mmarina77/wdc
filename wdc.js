@@ -310,8 +310,8 @@
   ];
 
     var tableSchema = {
-      id: "DOLContracts",
-      alias: "Some DOL contracts",
+      id: "USASpending",
+      alias: "Contracts from USASpending API",
       columns: cols
     };
 
@@ -435,7 +435,7 @@
           majAgencyCat = $('#Agency').val() || majAgencyCat;
           maxRecords = $('#MaxRecords').val() || MaxRecords;
 
-          tableau.connectionName = "Some DOL contracts"; // This will be the data source name in Tableau
+          tableau.connectionName = "Contracts from USASpending API"; // This will be the data source name in Tableau
           tableau.submit(); // This sends the connector object to Tableau
       });
   });
