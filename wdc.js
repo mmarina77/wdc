@@ -1,9 +1,10 @@
 // Testing deploybot
 
 (function() {
-  // hard-coded RL used for ajax call
-  var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=2015&maj_agency_cat=1600&sortby=f";
-  // var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=2015&maj_agency_cat=1600&sortby=f&max_records=100";
+  // Defaults for API query string
+  var fiscalYear = '2015',
+      majAgencyCat = '1600',
+      maxRecords = '1000';
 
   // Create the connector object
   var myConnector = tableau.makeConnector();
@@ -203,10 +204,6 @@
       alias: "Vendor State Code",
       dataType: tableau.dataTypeEnum.string
     },
-    // {
-    //   id: "vendor_cd",
-    //   dataType: tableau.dataTypeEnum.string
-    // },
     {
       id: "congressionaldistrict",
       alias: "Congressionaldistrict",
@@ -323,6 +320,8 @@
 
   // Download the data
   myConnector.getData = function(table, doneCallback) {
+    var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=" + fiscalYear + "&maj_agency_cat="+ majAgencyCat + "&max_records=" + maxRecords + "&sortby=f";
+    console.log(url);
     $.ajax({
     	url: "xmlproxy.php?url=" + escape(url),
       error: function(jqXHR, textStatus, errorThrown) {
@@ -432,6 +431,10 @@
   // Create event listeners for when the user submits the form
   $(document).ready(function() {
       $("#submitButton").click(function() {
+          fiscalYear = $('#FiscalYearSelected').val() || fiscalYear;
+          majAgencyCat = $('#Agency').val() || majAgencyCat;
+          maxRecords = $('#MaxRecords').val() || MaxRecords;
+
           tableau.connectionName = "Some DOL contracts"; // This will be the data source name in Tableau
           tableau.submit(); // This sends the connector object to Tableau
       });
