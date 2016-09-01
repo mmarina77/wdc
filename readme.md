@@ -14,14 +14,15 @@ The return is a single object containing two objects. `search_criteria` provides
 ## How the web data collector works
 The web data collector is basically a two-step process. First, the schema for the Tableau table is created. This happens around line 13 in `wdc.js` with the line that begins
 
-`myConnector.getSchema = function(schemaCallback) {
+```myConnector.getSchema = function(schemaCallback) {
   var cols = [{
     id: "piid",
     alias: "Piid",
     dataType: tableau.dataTypeEnum.string
   },
 
-  ... `
+  ...
+```
 
 For every item in the API JSON return you want imported into Tableau an object describing the field is added to the `cols` array.
 
@@ -31,10 +32,11 @@ The `dataType` property tells Tableau the data type. There are several instances
 
 After the schema is set, the web data connector actually fetches the data. This happens around line 307 with the line that begins
 
-`myConnector.getData = function(table, doneCallback) {
+```myConnector.getData = function(table, doneCallback) {
   var url = "https://www.usaspending.gov/fpds/fpds.php?detail=c&fiscal_year=" + fiscalYear + "&maj_agency_cat="+ majAgencyCat + "&max_records=" + maxRecords + "&sortby=f";
 
-  ...`
+  ...
+```
 
 After the JSON is returned from the API+proxy, there is a long `for` loop that cycles through the return and applies the data values to the ids set in the `getSchema` step. The code inside the loop looks like this:
 
