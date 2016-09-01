@@ -9,7 +9,7 @@ Because the USASpending API only returns XML, the `xmlproxy.php` script acts as 
 ## Understanding the API return and testing the proxy
 The `proxy.html` file is a test for the php proxy and API call. It pulls 10 records and logs the entire return to the browser console. The contractor names and obligated dollars are also added to the HTML page as visual evidence that the request was completed.
 
-The return is a single object containing two objects. `search_criteria` provides details of the API call. The actual data is found in the `result` object. Examining the `result` object is a convenient way of looking at all the fields and data types the API returns.
+The return is a single object containing two objects. `search_criteria` provides details of the API call. The actual data is found in the `result` object. Examining the `result` object is a convenient way of looking at all the fields and data types the API returns, but be aware that the API seems to not include a property if there is no value instead of including the property with a null value.
 
 ## How the web data collector works
 The web data collector is basically a two-step process. First, the schema for the Tableau table is created. This happens around line 13 in `wdc.js` with the line that begins
