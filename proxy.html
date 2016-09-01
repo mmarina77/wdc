@@ -49,7 +49,7 @@ function XHRhandler() {
 
 }
 
-// display tweets
+// display data
 function Display(data) {
 
 	var output = document.getElementById("output");
@@ -71,7 +71,7 @@ function Display(data) {
 	// display item
 	function Show(status) {
 		if (typeof status != "string") {
-			status = status.agencyID + ": " + status.mod_parent;
+			status = status.mod_parent + ": $" + status.obligatedAmount;
 		}
 		var p = document.createElement("p");
 		p.appendChild(document.createTextNode(status));
